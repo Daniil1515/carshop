@@ -1,0 +1,20 @@
+.presentation {
+    margin: 20px 0;
+    background: url('cashcar.jpg') no-repeat;
+    width: 120%;
+    height: 300px;
+    background-size: cover;
+    background-position: center center;
+
+}
+.presentation::after {
+    content: 'Sell&Buy Car';
+    position: absolute;
+    bottom: 350px;
+    left: 860px;
+    width: 300px;
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+
+}
