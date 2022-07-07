@@ -12,12 +12,9 @@ const Header = () => {
                 <Link to="/contacts" className='li__link'>Контакты</Link>
                 <Link to="/cars" className='li__link'>Каталог авто</Link>
                 <Link to="/account" className='li__link'>Личный кабинет</Link>
+                <Link to="/cart" className='li__link'><CartBlock /></Link>
             </ul>
         </div>
-
-                <div className='cart__icon'><CartBlock /></div>
-
-
         </header>
     );
 };

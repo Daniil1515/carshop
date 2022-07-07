@@ -8,6 +8,8 @@ import {
     Route,
     Routes
 } from "react-router-dom";
+import About from "./pages/about/about";
+import CarPage from "./pages/car-page/carPage";
 
 
 function App() {
@@ -19,7 +21,10 @@ function App() {
                     <Route path="/cars" element={<HomePage />} />
                 </Routes>
                 <Routes>
-                    <Route path="/about"  />
+                    <Route path="/cars/:id" element={<CarPage />} />
+                </Routes>
+                <Routes>
+                    <Route path="/about" element={<About />}/>
                 </Routes>
                 <Footer />
             </div>
