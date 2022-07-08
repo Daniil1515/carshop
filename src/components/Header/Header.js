@@ -5,8 +5,8 @@ import CartBlock from "../CartBlock/cart-block";
 const Header = () => {
     return (
         <header>
-        <div>
-            <span className='logo'>Buy Your Car</span>
+        <div >
+            <Link to="/cars" className='logo'>Buy Your Car</Link>
             <ul className='nav'>
                 <Link to="/about" className='li__link'>Про нас</Link>
                 <Link to="/contacts" className='li__link'>Контакты</Link>

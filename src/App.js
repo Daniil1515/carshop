@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import './App.css';
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
@@ -13,19 +13,23 @@ import CarPage from "./pages/car-page/carPage";
 
 
 function App() {
+
+
   return (
       <Router>
             <div className="wrapper">
               <Header />
                 <Routes>
-                    <Route path="/cars" element={<HomePage />} />
-                </Routes>
-                <Routes>
+
+                    <Route  path="/cars" element={<HomePage />} />
+
+
                     <Route path="/cars/:id" element={<CarPage />} />
-                </Routes>
-                <Routes>
+
+
                     <Route path="/about" element={<About />}/>
                 </Routes>
+
                 <Footer />
             </div>
       </Router>
